@@ -8,7 +8,7 @@ app.get("/", (req, res) => {
 })
 
 app.get("/tokens", (req, res) => {
-    res.send(parse.JSON(tokensData))
+    res.send(tokensData)
 })
 
 app.listen(port, () => {
